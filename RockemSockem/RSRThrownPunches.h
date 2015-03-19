@@ -11,5 +11,10 @@
 @interface RSRThrownPunches : NSObject
 
 @property (nonatomic, strong) NSMutableArray* circlesDrawn;
+
 - (void) newPunchAtX: (float) x AndY: (float) y;
+- (void) deletePunchAtX: (float) x andY: (float) y;
+- (void) listAllPunches;
+- (NSArray*) getAllPunches;
+
 @end

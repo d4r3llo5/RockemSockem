@@ -10,36 +10,55 @@
 
 @interface RSRBattleAreaView()
 
-- (UIBezierPath*)createEllipseAtX: (float) x AtY: (float) y;
-- (void) drawPunch;
+- (UIBezierPath*)createEllipseAtPoint: (CGPoint) point;
+- (void) drawPunches;
 @end
 
 @implementation RSRBattleAreaView
 
-- (void) drawRect:(CGRect) rect
+- (instancetype) init
 {
-    [self drawPunch];
+    self = [super init];
+    if (self)               // Init myself
+    {
+        if (!_punches)      // Init the punches array container
+        {
+            _punches = [[RSRThrownPunches alloc] init];
+        }
+    }
+    return self;
 }
 
-- (void) drawPunch
+- (void) drawRect:(CGRect) rect
+{
+    [self drawPunches];
+}
+
+/**
+ draws all of the punches that are stored in the ThrownPunches object
+ 
+ */
+- (void) drawPunches
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
-    UIBezierPath* circle;
-    circle = [self createEllipseAtX:200 AtY:200];
-    circle.lineWidth = 5;
-    
-    
     // Fill the path before stroking it so that the fill
     // color does not obscure the stroked line.
     CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
     
-    [circle fill];
-    [circle stroke];
+    for (RSRPunchObject* punch in [_punches getAllPunches])
+    {
+        UIBezierPath* circle;
+        circle = [self createEllipseAtPoint:[punch getCenter]];
+        circle.lineWidth = 5;
+        
+        
+        [circle fill];
+        [circle stroke];
+    }
 }
 
-- (UIBezierPath*)createEllipseAtX: (float) x AtY: (float) y
+- (UIBezierPath*)createEllipseAtPoint: (CGPoint) point
 {
-    CGPoint point = CGPointMake(x, y);
     UIBezierPath* ellipse = [UIBezierPath bezierPathWithArcCenter:point
                                                            radius:10
                                                        startAngle:0

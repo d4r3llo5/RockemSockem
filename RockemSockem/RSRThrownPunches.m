@@ -51,4 +51,9 @@
     }
 }
 
+- (NSArray*) getAllPunches
+{
+    return [NSArray arrayWithArray:_circlesDrawn];
+}
+
 @end

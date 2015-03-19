@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSRThrownPunches.h"
+#import "RSRPunchObject.h"
 
 @interface RSRBattleAreaView : UIView
+
+@property (nonatomic) RSRThrownPunches* punches;
 
 @end
