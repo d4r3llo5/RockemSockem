@@ -14,6 +14,13 @@
 		3B6ECA0B1AB9F754001B55DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6ECA0A1AB9F754001B55DC /* Images.xcassets */; };
 		3B6ECA0E1AB9F754001B55DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6ECA0C1AB9F754001B55DC /* LaunchScreen.xib */; };
 		3B6ECA1A1AB9F754001B55DC /* RockemSockemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6ECA191AB9F754001B55DC /* RockemSockemTests.m */; };
+		3B6ECA241AB9FC32001B55DC /* RSRTitleScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6ECA231AB9FC32001B55DC /* RSRTitleScreenViewController.xib */; };
+		3B6ECA271AB9FEF0001B55DC /* RSRTitleScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6ECA261AB9FEF0001B55DC /* RSRTitleScreenViewController.m */; };
+		3B7F20191ABB5619000AF24C /* RSRBattleScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B7F20181ABB5619000AF24C /* RSRBattleScreenViewController.xib */; };
+		3B7F201C1ABB564D000AF24C /* RSRBattleScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F201B1ABB564D000AF24C /* RSRBattleScreenViewController.m */; };
+		3B8E7BFB1ABB7C7A003BD5E4 /* RSRThrownPunches.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E7BFA1ABB7C7A003BD5E4 /* RSRThrownPunches.m */; };
+		3B8E7BFE1ABB8055003BD5E4 /* RSRPunchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E7BFD1ABB8055003BD5E4 /* RSRPunchObject.m */; };
+		3BF1651A1ABB5F5800ED2181 /* RSRBattleAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF165191ABB5F5800ED2181 /* RSRBattleAreaView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,18 @@
 		3B6ECA131AB9F754001B55DC /* RockemSockemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockemSockemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6ECA181AB9F754001B55DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6ECA191AB9F754001B55DC /* RockemSockemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockemSockemTests.m; sourceTree = "<group>"; };
+		3B6ECA231AB9FC32001B55DC /* RSRTitleScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSRTitleScreenViewController.xib; sourceTree = "<group>"; };
+		3B6ECA251AB9FEF0001B55DC /* RSRTitleScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRTitleScreenViewController.h; sourceTree = "<group>"; };
+		3B6ECA261AB9FEF0001B55DC /* RSRTitleScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRTitleScreenViewController.m; sourceTree = "<group>"; };
+		3B7F20181ABB5619000AF24C /* RSRBattleScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSRBattleScreenViewController.xib; sourceTree = "<group>"; };
+		3B7F201A1ABB564D000AF24C /* RSRBattleScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRBattleScreenViewController.h; sourceTree = "<group>"; };
+		3B7F201B1ABB564D000AF24C /* RSRBattleScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRBattleScreenViewController.m; sourceTree = "<group>"; };
+		3B8E7BF91ABB7C7A003BD5E4 /* RSRThrownPunches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRThrownPunches.h; sourceTree = "<group>"; };
+		3B8E7BFA1ABB7C7A003BD5E4 /* RSRThrownPunches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRThrownPunches.m; sourceTree = "<group>"; };
+		3B8E7BFC1ABB8055003BD5E4 /* RSRPunchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRPunchObject.h; sourceTree = "<group>"; };
+		3B8E7BFD1ABB8055003BD5E4 /* RSRPunchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRPunchObject.m; sourceTree = "<group>"; };
+		3BF165181ABB5F5800ED2181 /* RSRBattleAreaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSRBattleAreaView.h; sourceTree = "<group>"; };
+		3BF165191ABB5F5800ED2181 /* RSRBattleAreaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSRBattleAreaView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +100,20 @@
 		3B6EC9FC1AB9F754001B55DC /* RockemSockem */ = {
 			isa = PBXGroup;
 			children = (
+				3B8E7BFC1ABB8055003BD5E4 /* RSRPunchObject.h */,
+				3B8E7BFD1ABB8055003BD5E4 /* RSRPunchObject.m */,
+				3B8E7BF91ABB7C7A003BD5E4 /* RSRThrownPunches.h */,
+				3B8E7BFA1ABB7C7A003BD5E4 /* RSRThrownPunches.m */,
+				3BF165181ABB5F5800ED2181 /* RSRBattleAreaView.h */,
+				3BF165191ABB5F5800ED2181 /* RSRBattleAreaView.m */,
+				3B7F201A1ABB564D000AF24C /* RSRBattleScreenViewController.h */,
+				3B7F201B1ABB564D000AF24C /* RSRBattleScreenViewController.m */,
+				3B7F20181ABB5619000AF24C /* RSRBattleScreenViewController.xib */,
 				3B6ECA011AB9F754001B55DC /* AppDelegate.h */,
 				3B6ECA021AB9F754001B55DC /* AppDelegate.m */,
+				3B6ECA251AB9FEF0001B55DC /* RSRTitleScreenViewController.h */,
+				3B6ECA261AB9FEF0001B55DC /* RSRTitleScreenViewController.m */,
+				3B6ECA231AB9FC32001B55DC /* RSRTitleScreenViewController.xib */,
 				3B6ECA041AB9F754001B55DC /* ViewController.h */,
 				3B6ECA051AB9F754001B55DC /* ViewController.m */,
 				3B6ECA071AB9F754001B55DC /* Main.storyboard */,
@@ -200,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B6ECA091AB9F754001B55DC /* Main.storyboard in Resources */,
+				3B7F20191ABB5619000AF24C /* RSRBattleScreenViewController.xib in Resources */,
 				3B6ECA0E1AB9F754001B55DC /* LaunchScreen.xib in Resources */,
+				3B6ECA241AB9FC32001B55DC /* RSRTitleScreenViewController.xib in Resources */,
 				3B6ECA0B1AB9F754001B55DC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF1651A1ABB5F5800ED2181 /* RSRBattleAreaView.m in Sources */,
+				3B8E7BFB1ABB7C7A003BD5E4 /* RSRThrownPunches.m in Sources */,
 				3B6ECA061AB9F754001B55DC /* ViewController.m in Sources */,
 				3B6ECA031AB9F754001B55DC /* AppDelegate.m in Sources */,
 				3B6ECA001AB9F754001B55DC /* main.m in Sources */,
+				3B7F201C1ABB564D000AF24C /* RSRBattleScreenViewController.m in Sources */,
+				3B6ECA271AB9FEF0001B55DC /* RSRTitleScreenViewController.m in Sources */,
+				3B8E7BFE1ABB8055003BD5E4 /* RSRPunchObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +452,7 @@
 				3B6ECA1F1AB9F754001B55DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B6ECA201AB9F754001B55DC /* Build configuration list for PBXNativeTarget "RockemSockemTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +461,7 @@
 				3B6ECA221AB9F754001B55DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

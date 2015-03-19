@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RSRTitleScreenViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Create home window
+    RSRTitleScreenViewController* mainMenu;
+    mainMenu = [[RSRTitleScreenViewController alloc] initWithNibName:@"RSRTitleScreenViewController"
+                                                              bundle:[NSBundle mainBundle]];     // Init window with the NiB
+    
+    // Set the first window to be the title screen
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = mainMenu;
+    
+    // Draw it?
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
